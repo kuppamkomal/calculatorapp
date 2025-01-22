@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calc
+        </title>
+       
+        <link href="ht.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form action="/calculate" method="post">
+            <label>Enter number 1:</label>
+            <input type="number" name="num1" value="th:text='${n1}'">
+            <br/>
+            <label>Enter number 2:</label>
+            <input type="number" name="num2" value="th:text='${n2}'">
+            <br/>
+            <p>Result : <span th:text=${res}></span></p>
+            <div>
+                <button type="submit" name="operation" value="add">Add</button>
+                <button type="submit" name="operation" value="sub">Subtract</button>
+                <button type="submit" name="operation" value="mul">Multiply</button>
+                <button type="submit" name="operation" value="divide">Divide</button>
+            </div>
+        </form>
+    </body>
+</html>
